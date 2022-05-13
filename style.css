@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #918E9B;
+    font-family: 'Inter', sans-serif;
+    margin-top: 3em;
+}
+.app{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/* INFO */
+.info--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image image"
+    "name name"
+    "title title"
+    "website website"
+    "email linkedin";
+    background-color: #1A1B21;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    min-width: 275px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.info--image,
+.info--name,
+.info--title,
+.info--website,
+.info--email,
+.info--linkedin{
+    justify-self: center;
+    margin-bottom: 0;
+}
+.info--image{
+    background-image: url("../chris-headshot.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -2em;
+    height: 300px;
+    width: 100%;
+    min-width: 275px;
+    max-width: 400px;
+    grid-area: image;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+
+}
+.info--name{
+    grid-area: name;
+    color: white;
+}
+.info--title{
+    grid-area: title;
+    color: #f3bf99;
+    margin-bottom: .25em;
+}
+.info--website{
+    grid-area: website;
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+.info--email,
+.info--linkedin{
+    text-decoration: none;
+    padding: .5em 2em;
+    margin-bottom: 2em;
+    border-radius: .5em;
+
+}
+.info--email{
+    grid-area: email;
+    background-color: #f5f5f5;
+    border: 1px solid #1A1B21;
+    color: #1E1F26;
+}
+.info--linkedin{
+    grid-area: linkedin;
+    background-color: #5093E2;
+    border: 1px solid #fff;
+    color: #fff; 
+}
+.info--website:hover,
+.info--website:focus,
+.info--email:hover,
+.info--linkedin:hover,
+.info--email:focus,
+.info--linkedin:focus{
+    transform: scale(110%);
+}
+.fa-solid,
+.fa-linkedin{
+    margin-right:.5em;
+}
+
+.info--website:hover,
+.info--website:focus{
+    color: aqua;
+}
+
+/* ABOUT */
+
+.about--container{
+    display:flex;
+    flex-direction: column;
+    background-color: #1A1B21;
+    min-width: 275px;
+    max-width: 400px;
+    margin: -.1em auto;
+    
+}
+.about--title{
+    color: #fff;
+    margin:0 1.25em .25em;
+}
+.about--paragraph{
+    color: #dcdcdc;
+    margin: 0 2em 1em;
+}
+
+/* Footer */
+
+.footer--container{
+    display:flex;
+    flex-direction: column;
+    background-color: #1A1B21;
+    min-width: 275px;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.fa-github-square{
+    color: #fff;
+    margin: .1em 0 .5em;
+    font-size: 3rem;
+}
+.fa-github-square:hover,
+.fa-github-square:focus{
+    color: aqua;
+    transform: scale(1.1);
+}
