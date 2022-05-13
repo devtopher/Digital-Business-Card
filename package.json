@@ -1,4 +1,5 @@
 {
+  "homepage": "https://devtopher.github.io/Digital-Business-Card/",
   "name": "project",
   "dependencies": {
     "react": "17.0.2",
